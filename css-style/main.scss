@@ -7,12 +7,14 @@ body{
 h1{
     font-size: 2em;
     text-align: center;
+    color:white;
 }
 ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
 a{
     text-decoration: none;
 }
@@ -54,6 +56,7 @@ header{
     display: grid;
     text-align: center;
     padding: 4em;
+    color:white;
 
     #Ellipse-1{
         animation: bounce-1 2.7s ease-in-out 0s infinite;
@@ -88,16 +91,24 @@ header{
 }
 .page-2{
     width: 100%;
+    height:100%;
     display: flex;
     flex-direction: column;
     background: rgb(1,99,105);
     text-align: center;
+    color:white;
     h2{
         text-decoration: underline;
     }
     p{
         margin-bottom: 4em;
         word-spacing: .2rem;
+    }
+    .profileImage{
+        width:11.5em;
+        height:13.5em;
+        background: white;
+        border-radius: 5px;
     }
 }
 .page-3{
@@ -178,9 +189,29 @@ hr{
     height: 1px;
 }
 
+@media only screen and (max-width:800px) {
+.meet{
+    h4{
+        margin-bottom: 0;
+    }
+    .name{
+        margin-top:0;
+        margin-bottom: 1em;
+    }
+}
+}
+
 @media only screen and (min-width:800px) {
     
-
+    .meet{
+        h4{
+            margin-bottom: 0;
+        }
+        .name{
+            margin-top:0;
+            margin-bottom: 1em;
+        }
+    }
     .my-work-item-contents{
         display: grid;
         grid-template-columns: auto auto;
@@ -192,6 +223,7 @@ hr{
     
 }
 @media only screen and (min-width:1050px) {
+    
     .content{
         height: 90vh;
     }
@@ -219,11 +251,14 @@ hr{
     .content-in-class-above{
         background:rgb(1,99,105) ;
         padding: 6em 8em 6em 4em;
-        text-align: left; h1{
+        text-align: left; 
+        
+        h1{
         font-size: 3em;
         line-height: 1.2em;
         text-align: left;
-    }    
+        margin-bottom: 1em;
+        }    
     }
      
     .scroll{
@@ -231,8 +266,16 @@ hr{
     }
     .meet{
         margin: unset;
+        h4{
+           margin:0;
+           font-size: 1.2em;
+        }
+        .name{
+            margin-bottom: 2.6em;
+        }
         
         #scroll{
+            padding-top:2em;
             border-top: 50%;
         }
     }
@@ -243,8 +286,10 @@ hr{
         display: grid;
         grid-template-columns: 2fr 1fr;
         display: flex;
-        margin-top: 20rem;
+        margin-top: 1em;
         grid-gap: 1em;
+        height: 90%;
+        margin-bottom:4em;
     }
 
         #Vector-1{animation: slide-in 1s ease-in-out 200ms 1 none;}
