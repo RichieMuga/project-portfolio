@@ -6,8 +6,6 @@
     <title>Richie M portolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href="css-style/main.css">
-    
-    <script src='main.js'></script>
 </head>
 <body>
     <div class="nav-container">
@@ -124,7 +122,27 @@
 </div>
 </div>
 <div class="page-5">
-        <section><h1 style="color:black ">CONTACTS</h1>
+        <section><h1 style="color:black ">CONTACT ME</h1>
+            <!-- Bootstrap code-->
+ <div class="container">
+  <form action="https://formsubmit.co/richiemugambi4@gmail.com" method="POST">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="firstname" placeholder="Your name.." required>
+    
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject..." required>
+    <input type="hidden" name="_subject" value="New submission!">
+    <input type="hidden" name="_next" value="https://localhost:5500//thanks.html">
+
+    <label for="comment">Comment</label>
+    <textarea id="comment" name="comment" placeholder="Write something.." style="height:150px" required></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div> 
+            <!-- End of Bootstrap code -->
                 <p style="color: black;">Kindly click on the icons and(or) email text, to be redirected to my social media handles.</p></section>
     <div class="social-media">
     <ul><li><a href=""><img alt="dribble" src="images/dribble icon 1.png" width="" height="" ></a></li>
